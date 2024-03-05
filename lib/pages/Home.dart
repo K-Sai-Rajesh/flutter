@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
         child: currentScreen,
       ),
       floatingActionButton: Padding(
-        padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
         child: InkWell(
             child: FloatingActionButton(
           onPressed: () {},
@@ -38,9 +38,9 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
+        shape: const CircularNotchedRectangle(),
         notchMargin: 10,
-        child: Container(
+        child: SizedBox(
           height: 60,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

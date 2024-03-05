@@ -273,14 +273,14 @@ class SingleProduct extends StatelessWidget {
                     child: ListTile(
                       leading: Text(
                         productName.substring(0, 12) + '...',
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 10,
                             color: Colors.white),
                       ),
                       title: Text(
                         "\$$productPrice",
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.grey, fontWeight: FontWeight.bold),
                       ),
                     ),

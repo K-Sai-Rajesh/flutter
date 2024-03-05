@@ -3,7 +3,7 @@ import 'package:flutter_application_1/pages/Home.dart';
 
 void main() {
   // runApp(const MyApp());
-  runApp(new MaterialApp(debugShowCheckedModeBanner: false, home: new Home()));
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: Home()));
 }
 
 

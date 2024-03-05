@@ -17,11 +17,11 @@ class _ShopState extends State<Shop> {
       height: 200.0,
       child: Carousel(
         boxFit: BoxFit.cover,
-        images: [
-          const AssetImage('images/1.jpg'),
-          const AssetImage('images/2.jpg'),
-          const AssetImage('images/3.jpg'),
-          const AssetImage('images/4.jpg'),
+        images: const [
+          AssetImage('images/1.jpg'),
+          AssetImage('images/2.jpg'),
+          AssetImage('images/3.jpg'),
+          AssetImage('images/4.jpg'),
         ],
         autoplay: true,
         animationCurve: Curves.fastLinearToSlowEaseIn,
@@ -31,7 +31,7 @@ class _ShopState extends State<Shop> {
     );
     return Scaffold(
       body: ListView(
-        children: [imageCarousal, new Categories()],
+        children: [imageCarousal, const Categories()],
       ),
     );
   }

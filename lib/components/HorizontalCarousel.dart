@@ -1,7 +1,4 @@
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class HorizontalCarousel extends StatelessWidget {
   const HorizontalCarousel({super.key});
@@ -12,12 +9,12 @@ class HorizontalCarousel extends StatelessWidget {
       height: 80,
       child: ListView(
         scrollDirection: Axis.horizontal,
-        children: [
-          const Categories(
+        children: const [
+          Categories(
               image_caption: 'images', image_location: 'images/1.jpg'),
-          const Categories(
+          Categories(
               image_caption: 'images', image_location: 'images/2.jpg'),
-          const Categories(
+          Categories(
               image_caption: 'images', image_location: 'images/3.jpg'),
         ],
       ),
@@ -34,10 +31,10 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: new EdgeInsets.all(2.0),
+      padding: const EdgeInsets.all(2.0),
       child: InkWell(
           onTap: () => {},
-          child: Container(
+          child: SizedBox(
             width: 100.0,
             child: ListTile(
               title: Image.asset(
@@ -47,8 +44,8 @@ class Categories extends StatelessWidget {
               ),
               subtitle: Container(
                 alignment: Alignment.topCenter,
-                padding: EdgeInsets.all(8.0),
-                child: new Text(image_caption),
+                padding: const EdgeInsets.all(8.0),
+                child: Text(image_caption),
               ),
             ),
           )),
